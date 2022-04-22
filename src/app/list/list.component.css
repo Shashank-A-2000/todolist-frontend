@@ -1,0 +1,85 @@
+.gradient-custom-3 {
+
+  background: #84fab0;
+
+
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+
+  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+.gradient-custom-4 {
+
+  background: #84fab0;
+
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+.box {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.box-content {
+  background-color: #41d454;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: black;
+}
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+
+.add-button{
+  margin:20px;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+.collapse {
+  display: none;
+}
+
+.collapse.show {
+  display: inline-block;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.update-btn{
+ position: relative;
+ left:12rem;
+}
+
+.completed-item{
+  text-decoration: line-through;
+}

@@ -1,0 +1,21 @@
+<button class="btn btn-sm btn-outline-success" (click)="open(mymodal)">Edit</button>
+
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Edit Your Task</h4>
+    <button type="button" class="close btn btn-outline-danger" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">Close</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form #updateform>
+      <div class="form-outline mb-4 form-group">
+        <input type="text" id="newTaskValue" name="newTaskValue" autocomplete="off" class="form-control form-control-lg" [(ngModel)]="updatedValue"/>
+        <label class="form-label" for="form3Example1cg">New Task Value</label>
+      </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-success" (click)="modal.close('Save click');onSubmit(this.taskId);">Update</button>
+  </div>
+</form>
+</div>
+</ng-template>
